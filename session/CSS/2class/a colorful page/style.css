@@ -1,0 +1,27 @@
+.all {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(146, 81, 181, 1) 0%, rgba(0, 212, 255, 1) 100%);
+}
+
+body {
+    background-image: url(benjamin-voros-phIFdC6lA4E-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#menu {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 0%, rgba(81, 181, 145, 1) 100%);
+}
+.a1 {
+    background-color: red;
+    color: white;
+}
+.a1:hover {
+    background-color: yellow;
+    color: black;
+}
+.a2 {
+    background-color: green;
+    color: white;
+}
