@@ -1,0 +1,15 @@
+.all {
+    background: rgb(255, 0, 0);
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(84, 81, 181, 1) 100%);
+}
+
+body {
+    background-image: url(ales-krivec-Uszp5Gkg0AI-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#menu {
+    background: rgb(231, 0, 0);
+    background: linear-gradient(90deg, rgba(231, 0, 0, 1) 0%, rgba(162, 0, 231, 1) 50%, rgba(84, 81, 181, 1) 100%);
+}
