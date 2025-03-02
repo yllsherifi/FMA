@@ -6,21 +6,21 @@
 h1 {
     text-decoration: underline;
 }
-section:nth-child(odd) {
+article:nth-child(odd) {
     background-color: dimgray;
     color: white;
 }
-section:nth-child(even) {
+article:nth-child(even) {
     background-color: wheat;
     color: black;
 }
-section:first-child {
+article:first-child {
     margin-top: 30px;
 }
 .a1{
     width: 50%;
     height: 3px;
     background-color: darkred;
-    margin-left: 343px ;
+    margin: 10px auto;
     border: darkred 1px solid;
 }
