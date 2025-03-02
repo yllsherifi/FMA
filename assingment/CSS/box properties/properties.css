@@ -1,0 +1,16 @@
+img {
+    float: left;
+    padding: 2px;
+    margin-right: 5px;
+}
+p {
+    border: 30px;
+    margin: 20px;
+    padding: 20px;
+    background-color: red;
+}
+img:hover {
+    border-style: dashed;
+    padding: 7px;
+    cursor: pointer;
+}
