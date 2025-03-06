@@ -1,0 +1,12 @@
+img {
+    width: 40rem;
+    height: 30rem;
+    border: 3px solid black;
+}
+img:hover {
+    opacity: 0;
+}
+div:hover {
+    width: 40rem;
+    height: 30rem;
+}
