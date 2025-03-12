@@ -1,0 +1,278 @@
+.home {
+    margin: 1em 10% 0 10%;
+    background-image: url(amy-humphries-2M_sDJ_agvs-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projects {
+    margin: 1em 10% 0 10%;
+    background-image: url(linus-nylund-UCIZh0-OYPw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.head1 {
+    text-align: center;
+}
+
+#t1 {
+    font-size: 2.4rem;
+}
+
+.nav {
+    display: inline;
+    border: 2px transparent;
+    background-color: greenyellow;
+    padding: 6px 6px 6px 6px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.nava {
+    text-decoration: none;
+    color: darkgreen;
+}
+
+.nav:hover {
+    background-color: lightgreen;
+}
+
+.line {
+    height: 1px;
+    background-color: black;
+    border-color: transparent;
+}
+
+.intro {
+    text-align: center;
+    border: 3px transparent;
+    background-color: aquamarine;
+    padding: 20px 20px 20px 20px;
+    border-radius: 40px;
+    margin: 25px 0px 25px 0px;
+}
+
+.intro:hover {
+    background-color: rgb(76, 250, 192);
+    border: 3px solid black;
+}
+
+.education {
+    border: 3px transparent;
+    background-color: aqua;
+    padding: 20px 20px 20px 20px;
+    border-radius: 40px;
+    margin: 25px 0px 25px 0px;
+}
+
+.edu {
+    position: relative;
+    text-decoration: none;
+    padding: 0px;
+}
+
+.edu1 {
+    text-align: center;
+}
+
+.pri {
+    border: 2px transparent;
+    background-color: rgb(194, 253, 253);
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px 5px 5px 10px;
+    margin: 0px 0px 0px 0px;
+    color: gray;
+}
+
+.pri:nth-child(even) {
+    border-radius: 0px 0px 10px 10px;
+    margin: 0px 0px 15px 0px;
+    padding: 5px 5px 20px 40px;
+    color: black;
+}
+
+.education:hover {
+    background-color: rgb(1, 236, 236);
+    border: 3px solid black;
+}
+
+.grades {
+    position: relative;
+    text-align: center;
+    border: 3px transparent;
+    background-color: lightyellow;
+    padding: 20px 20px 80px 20px;
+    border-radius: 40px;
+    margin: 25px 0px 25px 0px;
+}
+
+.grades:hover {
+    background-color: rgb(247, 247, 185);
+    border: 3px solid black;
+}
+
+.table {
+    position: absolute;
+    left: 23%;
+    border-collapse: collapse;
+}
+
+.table1 {
+    background-color: rgb(248, 248, 160);
+}
+
+.th1 {
+    background-color: rgb(248, 248, 160);
+}
+
+.projects-home {
+    border: 3px transparent;
+    background-color: lightcoral;
+    padding: 20px 20px 20px 20px;
+    border-radius: 40px;
+    margin: 25px 0px 25px 0px;
+}
+
+.projects-home:hover {
+    background-color: rgb(231, 109, 109);
+    border: 3px solid black;
+}
+
+.footer {
+    text-align: center;
+    margin: 25px 0px 0px 0px;
+    border: 3px transparent;
+    background-color: white;
+    padding: 20px 20px 20px 20px;
+    border-radius: 40px 40px 0px 0px;
+}
+
+.footer:hover {
+    background-color: rgb(214, 214, 214);
+    border: 3px solid black;
+}
+
+.next {
+    text-decoration: none;
+    padding: 0px;
+}
+
+.next:hover {
+    border: 2px solid yellow;
+    background-color: yellow;
+    border-radius: 5px;
+}
+.pro1 {
+    border: 3px transparent;
+    background-color: lightcoral;
+    padding: 20px 20px 20px 20px;
+    border-radius: 40px;
+    margin: 25px 0px 25px 0px;
+}
+.pro1:hover {
+    background-color: rgb(231, 109, 109);
+    border: 3px solid black;
+}
+.img1 {
+    width: 88%;
+    height: 88%;
+    border-radius: 40px;
+}
+.pro2 {
+    background-color: lightblue;
+    padding: 20px 20px 20px 20px;
+    border-radius: 40px;
+    border: 3px transparent;
+    margin: 25px 0px 25px 0px;
+}
+.pro2:hover {
+    background-color: rgb(109, 231, 231);
+    border: 3px solid black;
+}
+.pro3 {
+    background-color: lightgreen;
+    padding: 20px 20px 20px 20px;
+    border-radius: 40px;
+    border: 3px transparent;
+    margin: 25px 0px 25px 0px;
+}
+.pro3:hover {
+    background-color: rgb(109, 231, 109);
+    border: 3px solid black;
+}
+.form {
+    position: relative;
+    text-align: center;
+    border: 3px transparent;
+    background-color: lightseagreen;
+    padding: 20px 20px 30px 20px;
+    border-radius: 40px;
+    margin: 25px 0px 25px 0px;
+}
+.form:hover {
+    background-color: rgb(18, 159, 152);
+    border: 3px solid black;
+}   
+.submit {
+    background-color: lightskyblue;
+    border: 2px transparent;
+    padding: 20px 12px 20px 12px;
+    border-radius: 100%;
+    margin: 0;
+}
+.submit:hover {
+    background-color: rgb(80, 169, 224);
+    border: 4px double lightgreen;
+    cursor: pointer;
+    margin: 0;
+}
+.social {
+    position: relative;
+    text-align: center;
+    border: 3px transparent;
+    background-color: rgb(147, 255, 255);
+    padding: 80px 80px 80px 80px;
+    margin: 30px 0px 30px 0px;
+    border-radius: 40px;
+}
+.social:hover {
+    background-color: rgb(5, 252, 244);
+    border: 3px solid black;
+}
+.head2 {
+    position: absolute;
+    top: 15px;
+    left: 34%;
+    right: 34%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.fb {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}
+.fb:hover {
+    border: 3px dashed red;
+    border-radius: 10%;
+}
+.ig {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
+.ig:hover {
+    border: 3px dashed red;
+    border-radius: 10%;
+}
+.lk {
+    position: absolute;
+    top: 40%;
+    left: 70%;
+}
+.lk:hover {
+    border: 3px dashed red;
+    border-radius: 10%;
+}
