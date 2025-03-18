@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+}
+
+.card {
+    width: 300px;
+    height: 600px;
+    border: 3px solid black;
+    box-shadow: 4px 4px 4px 4px grey;
+    margin: 20px;
+}
+
+.up {
+    display: flex;
+}
+
+.left {
+    padding: 60px;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-collapse: collapse;
+    flex-grow: 0;
+}
+.left-span {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.right {
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid black;
+    border-collapse: collapse;
+    flex-grow: 0;
+}
+
+.info {
+    border: 2px transparent;
+    padding: 10px;
+}
+
+.img {
+    width: 300px;
+    height: 390px;
+}
+.down {
+    height: inherit;
+    background-image: url(deadpool.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

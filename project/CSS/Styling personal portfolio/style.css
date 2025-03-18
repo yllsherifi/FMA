@@ -1,22 +1,19 @@
-.home {
+html {
+    cursor: url(cursor.cur), auto;
+
+}
+body {
     margin: 1em 10% 0 10%;
     background-image: url(amy-humphries-2M_sDJ_agvs-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.projects {
-    margin: 1em 10% 0 10%;
-    background-image: url(linus-nylund-UCIZh0-OYPw-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.head1 {
+.center {
     text-align: center;
 }
 
-#t1 {
+.head-line {
     font-size: 2.4rem;
 }
 
@@ -29,13 +26,15 @@
     text-decoration: none;
 }
 
-.nava {
+.nav-a {
     text-decoration: none;
     color: darkgreen;
+    cursor: url(pointer.cur), auto;
 }
 
 .nav:hover {
     background-color: lightgreen;
+    cursor: url(pointer.cur), auto;
 }
 
 .line {
@@ -72,11 +71,7 @@
     padding: 0px;
 }
 
-.edu1 {
-    text-align: center;
-}
-
-.pri {
+.school {
     border: 2px transparent;
     background-color: rgb(194, 253, 253);
     border-radius: 10px 10px 0px 0px;
@@ -85,7 +80,7 @@
     color: gray;
 }
 
-.pri:nth-child(even) {
+.school:nth-child(even) {
     border-radius: 0px 0px 10px 10px;
     margin: 0px 0px 15px 0px;
     padding: 5px 5px 20px 40px;
@@ -116,13 +111,15 @@
     position: absolute;
     left: 23%;
     border-collapse: collapse;
+    width: 35rem;
+    height: 3rem;
 }
 
-.table1 {
+.table-tr1 {
     background-color: rgb(248, 248, 160);
 }
 
-.th1 {
+.table-th1 {
     background-color: rgb(248, 248, 160);
 }
 
@@ -162,7 +159,9 @@
     border: 2px solid yellow;
     background-color: yellow;
     border-radius: 5px;
+    cursor: url(pointer.cur), auto;
 }
+
 .pro1 {
     border: 3px transparent;
     background-color: lightcoral;
@@ -170,15 +169,18 @@
     border-radius: 40px;
     margin: 25px 0px 25px 0px;
 }
+
 .pro1:hover {
     background-color: rgb(231, 109, 109);
     border: 3px solid black;
 }
+
 .img1 {
     width: 88%;
     height: 88%;
     border-radius: 40px;
 }
+
 .pro2 {
     background-color: lightblue;
     padding: 20px 20px 20px 20px;
@@ -186,10 +188,12 @@
     border: 3px transparent;
     margin: 25px 0px 25px 0px;
 }
+
 .pro2:hover {
     background-color: rgb(109, 231, 231);
     border: 3px solid black;
 }
+
 .pro3 {
     background-color: lightgreen;
     padding: 20px 20px 20px 20px;
@@ -197,10 +201,12 @@
     border: 3px transparent;
     margin: 25px 0px 25px 0px;
 }
+
 .pro3:hover {
     background-color: rgb(109, 231, 109);
     border: 3px solid black;
 }
+
 .form {
     position: relative;
     text-align: center;
@@ -210,23 +216,26 @@
     border-radius: 40px;
     margin: 25px 0px 25px 0px;
 }
+
 .form:hover {
     background-color: rgb(18, 159, 152);
     border: 3px solid black;
-}   
+}
+
 .submit {
     background-color: lightskyblue;
     border: 2px transparent;
-    padding: 20px 12px 20px 12px;
-    border-radius: 100%;
+    padding: 5px;
     margin: 0;
 }
+
 .submit:hover {
     background-color: rgb(80, 169, 224);
     border: 4px double lightgreen;
-    cursor: pointer;
+    cursor: url(pointer.cur), auto;
     margin: 0;
 }
+
 .social {
     position: relative;
     text-align: center;
@@ -236,10 +245,12 @@
     margin: 30px 0px 30px 0px;
     border-radius: 40px;
 }
+
 .social:hover {
     background-color: rgb(5, 252, 244);
     border: 3px solid black;
 }
+
 .head2 {
     position: absolute;
     top: 15px;
@@ -249,29 +260,35 @@
     padding: 0;
     margin: 0;
 }
+
 .fb {
     position: absolute;
     top: 40%;
     left: 30%;
 }
+
 .fb:hover {
     border: 3px dashed red;
     border-radius: 10%;
 }
+
 .ig {
     position: absolute;
     top: 40%;
     left: 50%;
 }
+
 .ig:hover {
     border: 3px dashed red;
     border-radius: 10%;
 }
+
 .lk {
     position: absolute;
     top: 40%;
     left: 70%;
 }
+
 .lk:hover {
     border: 3px dashed red;
     border-radius: 10%;
