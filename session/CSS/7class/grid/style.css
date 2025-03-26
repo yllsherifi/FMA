@@ -1,0 +1,25 @@
+body {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 60px;
+    width: 200vh;
+}
+
+.box {
+    background-color: greenyellow;
+    border: 2px solid green;
+    padding: 50px;
+}
+
+.box:first-child {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.box:nth-child(6) {
+    grid-row: 3 / 4;
+    grid-column: 1 / 5;
+}
