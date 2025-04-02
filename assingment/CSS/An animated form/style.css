@@ -1,0 +1,57 @@
+body {
+    height: 100vh;
+}
+
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 17rem;
+    margin: 3rem;
+    background-color: gray;
+}
+
+.input {
+    width: auto;
+    height: 2rem;
+    margin: 0.6rem;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+.input:focus {
+    border: 2px solid blue;
+    border-radius: 0.3rem;
+    outline: 0.5px solid white;
+}
+
+.submit {
+    margin: 0.8rem;
+    width: 4rem;
+    height: 2.2rem;
+    background-color: blue;
+    color: white;
+    border: none;
+}
+
+.img {
+    position: absolute;
+    right: 0.6rem;
+    bottom: 1rem;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-180deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
