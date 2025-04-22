@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input to text</title>
+</head>
+<body>
+    <input type="text" name="" id="fullname">
+    <button onclick="passname()">Send</button>
+
+    <h1 id="rName">recive name</h1>
+    <script>
+        const fullname = document.querySelector('#fullname')
+        const rName = document.querySelector('#rName')
+        function passname(){
+            rName.textContent = fullname.value;
+        } 
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal info</title>
+</head>
+<body>
+    <table border="1" cellspacing="5">
+        <tr>
+            <td width="25%">full name: </td>
+            <td id="pName"></td>
+        </tr>
+        <tr>
+            <td>email:</td>
+            <td id="pEmail"></td>
+        </tr>
+        <tr>
+            <td>phone:</td>
+            <td id="pPhone"></td>
+        </tr>
+    </table>
+
+    <script>
+        let fullname = "yll sherifi";
+        let email = "yllsherfi2021@gmail.com";
+        let phone = "+383045956211";
+
+        const pName = document.querySelector('#pName');
+        const pEmail = document.querySelector('#pEmail');
+        const pPhone = document.querySelector('#pPhone');
+
+        pName.innerHTML = "<b>" +fullname+ "<b>";
+        pEmail.innerHTML = `<b>${email}<b>`;
+        pPhone.innerHTML = `<b style="color:red" >${phone}<b>`;
+    </script>
+</body>
+</html>
