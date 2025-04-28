@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let temp = prompt("Enter a temperature: ");
+        if (0 <= temp && temp <= 10) {
+            alert(`weather is cold`);
+        }
+        else if (10 < temp && temp <= 20) {
+            alert(`weather is cool`);
+        }
+        else if (20 < temp && temp <= 30) {
+            alert(`weather is warm`);
+        }
+        else if (30 < temp && temp <= 40) {
+            alert(`weather is hot`);
+        }
+        else if (-10 <= temp && temp <= 0) {
+            alert(`weather is very cold`);
+        }
+        else if (-20 <= temp && temp <= -10) {
+            alert(`weather is very very cold`);
+        }
+        else if (-30 <= temp && temp <= -20) {
+            alert(`weather is freezing`);
+        }
+    </script>
+</body>
+</html>

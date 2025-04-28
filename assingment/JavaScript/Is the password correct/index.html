@@ -7,9 +7,11 @@
 </head>
 <body>
     <script>
-        let num1 = prompt("Enter a number: ");
-        let num2 = prompt("Enter another number: ");
-        console.log(`${num1} + ${num2} = ${parseInt(num1) + parseInt(num2)}`);
+        let password = "12345678";
+        let userInput = prompt("Please enter the password:");
+        if (userInput == password) {
+            alert("Password is correct!");
+        } 
     </script>
 </body>
 </html>

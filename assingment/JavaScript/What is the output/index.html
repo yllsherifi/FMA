@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        let num1 = prompt("Enter a number: ");
-        let num2 = prompt("Enter another number: ");
-        console.log(`${num1} + ${num2} = ${parseInt(num1) + parseInt(num2)}`);
+        let a = 77;
+        let b = 55;
+        let c;
+        b = 44;
+        c = b;
+        b = a;
+        a = c;
+        console.log(a);
     </script>
 </body>
+
 </html>

@@ -7,9 +7,12 @@
 </head>
 <body>
     <script>
-        let num1 = prompt("Enter a number: ");
-        let num2 = prompt("Enter another number: ");
-        console.log(`${num1} + ${num2} = ${parseInt(num1) + parseInt(num2)}`);
+        let num = prompt("Enter a number: ");
+        if (num % 2 == 0) {
+            console.log(num + " is even.");
+        } else {
+            console.log(num + " is odd.");
+        }
     </script>
 </body>
 </html>
