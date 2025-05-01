@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num1 = parseInt(prompt("Enter first number:"));
+        let operator = prompt("Enter operator (+, -, *, /):");
+        let num2 = parseInt(prompt("Enter second number:"));
+
+        switch (operator) {
+            case `+`:
+                alert(num1 + num2);
+                break;
+            case `-`:
+                alert(num1 - num2);
+                break;
+            case `*`:
+                alert(num1 * num2);
+                break;
+            case `/`:                
+                alert(num1 / num2);
+                break;
+        }
+    </script>
+</body>
+
+</html>
