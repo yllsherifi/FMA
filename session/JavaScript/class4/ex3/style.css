@@ -10,7 +10,7 @@ body {
 .progress-bar-container {
     display: flex;
     gap: 0.5rem;
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin: 0.5rem;
     height: 100%;
 }
@@ -28,7 +28,7 @@ body {
 
 .progress-bar {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
     height: 0%;
