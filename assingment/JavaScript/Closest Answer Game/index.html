@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <span class="text">The correct answer is  </span>
+            <span id="answer-text" class="text"></span>
+        </div>
+        <div class="answers">
+            <div class="answer1">
+                <span>player 1</span>
+                <span class="number1"></span>
+            </div>
+            <div class="answer1 answer2">
+                <span>player 2</span>
+                <span class="number2"></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let answer = Math.floor(Math.random() * 20) + 1;
+        let player1 = prompt(`Player one:`);
+        let player2 = prompt(`Player two:`);
+        if (isNaN(player1) || isNaN(player2)) {
+            throw new Error(`Please write only numbers`);
+        }
+        if ((player1 < 0 || player1 > 20) ||
+            (player2 < 0 || player2 > 20)) {
+            throw new Error(`Only select numbers between 0-20`);
+        }
+        let player1distance = Math.abs(answer - player1);
+        let player2distance = Math.abs(answer - player2);
+        let winner;
+        if (player1distance < player2distance) {
+            winner = `Player 1 wins!`;
+            document.querySelector(`.answer1`).style.color = `green`;
+            document.querySelector(`.answer2`).style.color = `red`;
+        } else if (player1distance === player2distance) {
+            winner = `It's a tie!`;
+            document.querySelector(`.answer1`).style.color = `orange`;
+            document.querySelector(`.answer2`).style.color = `orange`;
+        } else {
+            winner = `Player 2 wins!`;
+            document.querySelector(`.answer2`).style.color = `green`;
+            document.querySelector(`.answer1`).style.color = `red`;
+        }
+
+        document.getElementById(`answer-text`).innerHTML = answer;
+        document.querySelector(`.number1`).innerHTML = player1;
+        document.querySelector(`.number2`).innerHTML = player2;
+    </script>
+</body>
+
+</html>
