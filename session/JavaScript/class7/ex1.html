@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function quiz() {
+            let pyetja1 = prompt(`Cili eshte kryeqyteti i Shqiperise?
+            1) Tirane
+            2) Prishtine
+            3) Shkoder
+            4) Podgorice`);
+            let sum = 0;
+            if (pyetja1 == "1") {
+                sum += 30;
+            } else {
+                sum += 0;
+            }
+            let pyetja2 = prompt(`Cili eshte kryeqyteti i Kosoves?
+            1) Tirane
+            2) Prishtine
+            3) Shkoder
+            4) Podgorice`);
+            if (pyetja2 == "2") {
+                sum += 30;
+            } else {
+                sum += 0;
+            }
+            let pyetja3 = prompt(`Cili eshte kryeqyteti i Malit te Zi?
+            1) Tirane
+            2) Prishtine
+            3) Shkoder
+            4) Podgorice`);
+            if (pyetja3 == "4") {
+                sum += 30;
+            } else {
+                sum += 0;
+            }
+            alert(`Ju keni fituar ${sum} pikë!`);
+        }
+        setTimeout(quiz, 5000);
+    
+    </script>
+</body>
+
+</html>
