@@ -1,0 +1,13 @@
+body{
+    height: 100vh;
+    position: relative;
+}
+.circle{
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    background-color: blue;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let circle = {
+            radius : 5,
+            PI : 3.14,
+
+            getRadius : function() {
+                return this.radius;
+            },
+            setRadius : function(radius) {
+                this.radius = radius;
+            },
+
+            getArea : function() {
+                return this.PI * this.radius * this.radius;
+            },
+            setArea : function(area) {
+                this.radius = Math.sqrt(area / this.PI);
+            },
+            getPerimeter : function() {
+                return 2 * this.PI * this.radius;
+            },
+            setPerimeter : function(perimeter) {
+                this.radius = perimeter / (2 * this.PI);
+            }
+        }
+        console.log(circle.getRadius());
+        console.log(circle.getArea());
+        console.log(circle.getPerimeter());
+
+        
+    </script>
+</body>
+
+</html>
