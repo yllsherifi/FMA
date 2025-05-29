@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="password" id="passwordLabel"></label>
+    <input type="password" id="password" placeholder="Enter your password">
+    <script>
+        let passwordLabel = document.getElementById("passwordLabel");
+        let password = document.getElementById("password");
+
+        function onFocus() {
+            password.setAttribute(`type`, `text`);
+        }
+        function onBlur() {
+            password.setAttribute(`type`, `password`);
+        }
+
+        password.addEventListener('mouseenter', onFocus);
+        password.addEventListener('mouseleave', onBlur);
+    </script>
+</body>
+</html>

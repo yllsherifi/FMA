@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click here</button>
+    <p id="counter"></p>
+    <script>
+        let mybtn = document.getElementById("btn");
+        let counter = document.getElementById("counter");
+        let start = 0;
+
+        function onClick() {
+            start++;
+            counter.textContent = start;
+        }
+
+        mybtn.addEventListener('click', onClick);
+    </script>
+</body>
+</html>
