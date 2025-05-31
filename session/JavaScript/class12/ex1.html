@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>To-Do list</h1>
+    <input type="text" id="taskInput" placeholder="Shto nje detyre...">
+    <button id="btn">Shto</button>
+    <script>
+        let taskInput = document.getElementById("taskInput");
+        let btn = document.getElementById("btn");
+
+        btn.addEventListener('click', (event) => {
+            let li = document.createElement('li');
+            let liBtn = document.createElement('button');
+            liBtn.innerHTML = "Fshij";
+            li.innerHTML = taskInput.value;
+            document.body.appendChild(li);
+            li.appendChild(liBtn);
+            li.style.margin = "10px";
+            liBtn.style.marginLeft = "10px";
+            liBtn.style.padding = "5px";
+            liBtn.addEventListener('click', (eventLi) => {
+                li.remove(eventLi);
+            });
+        });
+    </script>
+</body>
+
+</html>
