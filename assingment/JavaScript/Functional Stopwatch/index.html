@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .timerbtn {
+            width: 80px;
+            height: 30px;
+            border: 3px solid;
+            border-radius: 12px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        #timeDisplay {
+            font-size: 75px;
+            color: white;
+        }
+
+        #timeContainer {
+            text-align: center;
+            border: 3px solid black;
+            border-radius: 25px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="timeContainer">
+        <div id="timeDisplay">00:00:00</div>
+        <button id="startBtn" class="timerbtn">Start</button>
+        <button id="pauseBtn" class="timerbtn">pause</button>
+        <button id="resetBtn" class="timerbtn">reset</button>
+    </div>
+    <script>
+        const timeDisplay = document.getElementById('#timeDisplay');
+        const startBtn = document.getElementById('#startBtn');
+        const pauseBtn = document.getElementById('#pauseBtn');
+        const resetBtn = document.getElementById('#resetBtn');
+
+        let startTime;
+        let elapsedTime = 0;
+        let currentTime;
+        let paused = true;
+        let intervalId;
+        let hrs = 0;
+        let mins = 0;
+        let secs = 0;
+
+        startBtn.addEventListener("click", () => {
+            if (paused) {
+                paused = false;
+                startTime = Date.now() - elapsedTime;
+                intervalId = setInterval(updateTime, 750); 
+            }
+        });
+        pauseBtn.addEventListener("click", () => {
+            if (!paused) {
+                paused = true;
+                elapsedTime = Date.now() - startTime;
+                clearInterval(intervalId);
+            }
+        });                   
+        resetBtn.addEventListener("click", () => {
+            paused = true;
+            clearInterval(intervalId);
+            startTime = 0;
+            elapsedTime = 0;
+            currentTime = 0;
+            hrs = 0;
+            mins = 0;
+            secs = 0;
+            timeDisplay.textContent = "00:00:00";
+        });
+
+        function updateTime() {
+            elapsedTime = Date.now() - startTime;
+
+            secs = Math.floor((elapsedTime / 1000) % 60);
+            mins = Math.floor((elapsedTime / (1000 * 60)) % 60);
+            hrs = Math.floor((elapsedTime / (1000 * 60 * 60)) % 24);
+
+            timeDisplay = `${hrs}:${mins}:${secs}`;
+        }
+    </script>
+</body>
+
+</html>
