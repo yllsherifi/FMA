@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        fetch('https://dogapi.dog/api/v2/facts?limit=4')
+            .then(res => res.json())
+            .then((json) => {
+                processData(json.data); 
+            });
+
+        function processData(data) {
+            let list = document.createElement('ul');
+
+            data.forEach(item => {
+                let el = document.createElement('li');
+                el.textContent = item.attributes.body;
+                list.appendChild(el);
+            });
+
+            document.body.appendChild(list);
+        }
+
+    </script>
+</body>
+
+</html>
