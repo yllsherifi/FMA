@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .input {
+            width: 200px;
+            height: 30px;
+            margin: 10px;
+        }
+        .button {
+            width: 225px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>New student</h1>
+    <input type="text" id="newStu" placeholder="name and surname" class="input">
+    <input type="text" id="age" placeholder="age" class="input">
+    <input type="text" id="class" placeholder="class" class="input">
+    <button id="btn" class="button">push</button>
+    <script>
+        let newStu = document.getElementById("newStu");
+        let btn = document.getElementById("btn");
+        let age = document.getElementById("age");
+        let clas = document.getElementById("class");
+
+        btn.addEventListener('click', (event) => {
+            let list = document.createElement('ul');
+            let li = document.createElement('li');
+            let ageLi = document.createElement('li');
+            let classLi = document.createElement('li');
+
+            let liBtn = document.createElement('button');
+            let editbtn = document.createElement('button');
+            
+            liBtn.innerHTML = "delete";
+            editbtn.innerHTML = "edit";
+
+            li.innerHTML = newStu.value;
+            ageLi.innerHTML = age.value;
+            classLi.innerHTML = clas.value;
+            
+            document.body.appendChild(list);
+            list.appendChild(li);
+            list.appendChild(ageLi);
+            list.appendChild(classLi);
+            li.appendChild(liBtn);
+            li.appendChild(editbtn);
+            
+            liBtn.style.marginLeft = "10px";
+            liBtn.style.padding = "5px";
+            liBtn.addEventListener('click', (eventLi) => {
+                li.remove(eventLi);
+                ageLi.remove(eventLi);
+                classLi.remove(eventLi);
+            });
+
+            editbtn.addEventListener('click', (eventLi) => {
+                let newName = prompt("Enter new name and surname:", li.innerHTML);
+                let newAge = prompt("Enter new age:", ageLi.innerHTML);
+                let newClass = prompt("Enter new class:", classLi.innerHTML);
+
+                if (newName !== null) {
+                    li.innerHTML = newName;
+                }
+                if (newAge !== null) {
+                    ageLi.innerHTML = newAge;
+                }
+                if (newClass !== null) {
+                    classLi.innerHTML = newClass;
+                }
+                
+                li.appendChild(liBtn);
+                li.appendChild(editbtn);
+            });
+        });
+    </script>
+</body>
+
+</html>
