@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>
+            <button id="addBTN">Add Student</button>
+        </div>
+        <table border="1" cellpadding="5">
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Student Name</th>
+                    <th>Photo</th>
+                    <th>GPA</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="allStudents"></tbody>
+        </table>
+    </div>
+
+    <div class="movieModal" id="movieModal">
+        <header>
+            <h2 id="modalTitle">Add Student</h2>
+        </header>
+        <main>
+            <div><input type="number" id="year" placeholder="Year"></div>
+            <div><input type="text" id="studentName" placeholder="Student Name"></div>
+            <div>
+                <select id="thumb">
+                    <option value="studenti.png">Male</option>
+                    <option value="studente.jpg">Female</option>
+                </select>
+            </div>
+            <div><input type="number" id="gpa" placeholder="GPA"></div>
+        </main>
+        <footer>
+            <button id="cancelBTN">Cancel</button>
+            <button id="submitBTN">Submit</button>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
